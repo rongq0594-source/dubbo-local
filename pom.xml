@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.localfirst.dubbo</groupId>
+  <artifactId>dubbo-local</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>Dubbo Local</name>
+  <description>Dubbo 本地优先路由 Starter</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <spring-boot.version>2.7.18</spring-boot.version>
+    <spring-framework.version>5.3.31</spring-framework.version>
+    <dubbo.version>3.3.0</dubbo.version>
+    <junit.version>5.10.2</junit.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <version>${spring-boot.version}</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency><groupId>org.springframework</groupId><artifactId>spring-aop</artifactId><version>${spring-framework.version}</version><optional>true</optional></dependency>
+    <dependency><groupId>org.springframework</groupId><artifactId>spring-jcl</artifactId><version>${spring-framework.version}</version><optional>true</optional></dependency>
+    <dependency><groupId>org.apache.dubbo</groupId><artifactId>dubbo</artifactId><version>${dubbo.version}</version><optional>true</optional></dependency>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>${junit.version}</version><scope>test</scope></dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.13.0</version><configuration><source>${maven.compiler.source}</source><target>${maven.compiler.target}</target></configuration></plugin>
+      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.2.5</version></plugin>
+    </plugins>
+  </build>
+</project>

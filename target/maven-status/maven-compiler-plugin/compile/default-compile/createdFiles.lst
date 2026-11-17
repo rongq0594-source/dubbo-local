@@ -1,0 +1,6 @@
+io\localfirst\dubbo\LocalAddress.class
+io\localfirst\dubbo\LocalFirstHandler.class
+io\localfirst\dubbo\LocalFirstHandler$Target.class
+io\localfirst\dubbo\LocalFirstAutoConfiguration.class
+io\localfirst\dubbo\LocalCache.class
+io\localfirst\dubbo\ReferencePostProcessor.class

@@ -1,0 +1,1361 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----< io.localfirst.dubbo:dubbo-local-first-spring-boot-starter >------
+[INFO] Building Dubbo Local-first Spring Boot Starter 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ dubbo-local-first-spring-boot-starter ---
+[INFO] Deleting D:\demo\local-first-dubbo-spring-boot-starter\target
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ dubbo-local-first-spring-boot-starter ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ dubbo-local-first-spring-boot-starter ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 5 source files with javac [debug target 1.8] to target\classes
+[INFO] /D:/demo/local-first-dubbo-spring-boot-starter/src/main/java/io/localfirst/dubbo/LocalCache.java: D:\demo\local-first-dubbo-spring-boot-starter\src\main\java\io\localfirst\dubbo\LocalCache.javaʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/demo/local-first-dubbo-spring-boot-starter/src/main/java/io/localfirst/dubbo/LocalCache.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ dubbo-local-first-spring-boot-starter ---
+[INFO] skip non existing resourceDirectory D:\demo\local-first-dubbo-spring-boot-starter\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ dubbo-local-first-spring-boot-starter ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 6 source files with javac [debug target 1.8] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ dubbo-local-first-spring-boot-starter ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.localfirst.dubbo.ConfigurationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s -- in io.localfirst.dubbo.ConfigurationTest
+[INFO] Running io.localfirst.dubbo.LocalCacheTest
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[1.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:39 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[1.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[1], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[1.1](unknown), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[1], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[1] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[1.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[1.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[1.1](unknown) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[1.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[1.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[1.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[1] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[1] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[2] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[2.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[2.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[2], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[2.1](unknown), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[test-provider]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������δ���У�ʹ��ԭ Dubbo ����, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[2], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[2] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[2.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[2.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[2.1](unknown) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[2.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[2.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[2.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[2] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[2] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[3] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[3.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[3.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[3], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[3.1](unknown), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[test-provider]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������δ���У�ʹ��ԭ Dubbo ����, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[test-provider]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������δ���У�ʹ��ԭ Dubbo ����, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[test-provider]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������δ���У�ʹ��ԭ Dubbo ����, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������δ���У�ʹ��ԭ Dubbo ����, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[3], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[3] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[3.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[3.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[3.1](unknown) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[3.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[3.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[3.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[3] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[3] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[4] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[4.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[4.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+����: ��������ɨ��ʧ�ܣ�����ԭ����, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848
+java.lang.IllegalStateException: registry unavailable
+	at io.localfirst.dubbo.LocalCacheTest.registryFailureDoesNotChangeOriginal(LocalCacheTest.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������δ���У�ʹ��ԭ Dubbo ����, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[4] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[4.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[4.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[4.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[4.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[4.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[4] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[5] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[5.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[5.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[5], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[5.1](unknown), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[5], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[5] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[5.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[5.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[5.1](unknown) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[5.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[5.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[5.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[5] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[5] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[6] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[6.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[6.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[6] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[6.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[6.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[6.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[6.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[6.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[6] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[7] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[7.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[7.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[7], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[7.1](unknown), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[test-provider]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ���������ѻ���, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, application=test-provider, endpoint=tri://192.0.2.10:20888
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[test-provider]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ���������ѻ���, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, application=test-provider, endpoint=tri://192.0.2.10:20888
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[7], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[7] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[7.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[7.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[7.1](unknown) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[7.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[7.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[7.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[7] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[7] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[8] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[8.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[8.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ������ʽ Dubbo ����, service=io.localfirst.dubbo.LocalCacheTest$Query
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[8] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[8.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[8.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[8.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[8.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[8.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[8] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[9] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[9.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[9.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[9], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[9.1](unknown), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ��������ɨ��, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, registry=registry.example:8848, namespace=test-namespace, applications=[test-provider]
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.LocalCache resolve
+��Ϣ: ���������ѻ���, service=group/io.localfirst.dubbo.LocalCacheTest$Query:1, application=test-provider, endpoint=tri://192.0.2.10:20888
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[9], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[9] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[9.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[9.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[9.1](unknown) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[9.1](unknown) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[9.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[9.1](unknown) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[9] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[9] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.003 s -- in io.localfirst.dubbo.LocalCacheTest
+[INFO] Running io.localfirst.dubbo.LocalFirstHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in io.localfirst.dubbo.LocalFirstHandlerTest
+[INFO] Running io.localfirst.dubbo.ReferencePostProcessorTest
+ʮһ�� 17, 2026 1:27:40 ���� io.localfirst.dubbo.ReferencePostProcessor onApplicationEvent
+��Ϣ: �������û����ʼ�����, referenceCount=1
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s -- in io.localfirst.dubbo.ReferencePostProcessorTest
+[INFO] Running io.localfirst.dubbo.RpcTest
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[10] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The current configurations or effective configurations are as follows:, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:application enableFileCache="true" executorManagementMode="isolation" parameters="{}" name="local-cache-test" qosEnable="false" protocol="dubbo" />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:protocol preferSerialization="hessian2,fastjson2" name="dubbo" />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:ssl />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.0] has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.1] has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.1](local-cache-test) has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.1] is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.1](local-cache-test) is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.0] is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.0] has started., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.0] has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.1] has started., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The MetricsConfig not exist, will not export metrics service., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.1](local-cache-test) is ready., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.1] has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.1](local-cache-test) has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[10], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:40 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[10.1](local-cache-test), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger warn
+����:  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.3.0, current host: 192.168.7.39, error code: 5-8. This may be caused by , go to https://dubbo.apache.org/faq/5/8 to find instructions. 
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service io.localfirst.dubbo.RpcTest$Echo to local registry url : injvm://127.0.0.1/io.localfirst.dubbo.RpcTest$Echo?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&interface=io.localfirst.dubbo.RpcTest$Echo&methods=echo&pid=10768&qos.enable=false&release=3.3.0&side=provider&timestamp=1794893260954, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service io.localfirst.dubbo.RpcTest$Echo to url dubbo://192.168.7.39:20880/io.localfirst.dubbo.RpcTest$Echo?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&interface=io.localfirst.dubbo.RpcTest$Echo&methods=echo&pid=10768&qos.enable=false&release=3.3.0&side=provider&timestamp=1794893260954, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] org.apache.dubbo.metadata.MetadataServiceService Port hasn't been set will use default protocol defined in protocols., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Using dubbo protocol to export org.apache.dubbo.metadata.MetadataService service on port -1, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service org.apache.dubbo.metadata.MetadataService to local registry url : injvm://127.0.0.1/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893261320&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service org.apache.dubbo.metadata.MetadataService to url dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893261320&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The MetadataService exports urls : [dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893261320&version=1.0.0], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dynamically registering consumer model io.localfirst.dubbo.RpcTest$Echo into model Dubbo Module[10.1.1], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Successfully connect to server /192.168.7.39:20880 from NettyClient 192.168.7.39 using dubbo version 3.3.0, channel is NettyChannel [channel=[id: 0x0691b0c3, L:/192.168.7.39:54652 - R:/192.168.7.39:20880]], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Start NettyClient /192.168.7.39 connect to the server /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Because thread pool isolation is enabled on the dubbo protocol, the body can only be decoded on the io thread, and the parameter[decode.in.io.thread] will be ignored, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close netty channel [id: 0x0691b0c3, L:/192.168.7.39:54652 - R:/192.168.7.39:20880], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger warn
+����:  [DUBBO] All clients has disconnected from /192.168.7.39:20880. You can graceful shutdown now., dubbo version: 3.3.0, current host: 192.168.7.39, error code: 99-0. This may be caused by unknown error in remoting module, go to https://dubbo.apache.org/faq/99/0 to find instructions. 
+ʮһ�� 17, 2026 1:27:41 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Service io.localfirst.dubbo.RpcTest$Echo has idle for 0 ms, wait for 3333 ms to un-export, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[10], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[10] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[10.1](local-cache-test) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.1](local-cache-test) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying protocol [DubboProtocol] ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Closing dubbo server: /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:44 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Unexport service: dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893261320&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Unexport service: injvm://127.0.0.1/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893261320&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[10.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[10.1](local-cache-test) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[10] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[10] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[11] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:46 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The current configurations or effective configurations are as follows:, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:application enableFileCache="true" executorManagementMode="isolation" parameters="{}" name="local-cache-test" qosEnable="false" protocol="dubbo" />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:protocol preferSerialization="hessian2,fastjson2" name="dubbo" />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:ssl />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.0] has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.1] has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.1](local-cache-test) has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.1] is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.1](local-cache-test) is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.0] is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.0] has started., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.0] has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.1] has started., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The MetricsConfig not exist, will not export metrics service., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.1](local-cache-test) is ready., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.1] has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.1](local-cache-test) has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[11], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[11.1](local-cache-test), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger warn
+����:  [DUBBO] Use random available port(50052) for protocol tri, dubbo version: 3.3.0, current host: 192.168.7.39, error code: 5-8. This may be caused by , go to https://dubbo.apache.org/faq/5/8 to find instructions. 
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service io.localfirst.dubbo.RpcTest$Echo to local registry url : injvm://127.0.0.1/io.localfirst.dubbo.RpcTest$Echo?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=50052&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&interface=io.localfirst.dubbo.RpcTest$Echo&methods=echo&pid=10768&qos.enable=false&release=3.3.0&side=provider&timestamp=1794893267026, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service io.localfirst.dubbo.RpcTest$Echo to url tri://192.168.7.39:50052/io.localfirst.dubbo.RpcTest$Echo?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=50052&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&interface=io.localfirst.dubbo.RpcTest$Echo&methods=echo&pid=10768&qos.enable=false&release=3.3.0&side=provider&timestamp=1794893267026, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Start NettyPortUnificationServer bind /0.0.0.0:50052, export /0:0:0:0:0:0:0:0:50052, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] org.apache.dubbo.metadata.MetadataServiceService Port hasn't been set will use default protocol defined in protocols., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Using dubbo protocol to export org.apache.dubbo.metadata.MetadataService service on port -1, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service org.apache.dubbo.metadata.MetadataService to local registry url : injvm://127.0.0.1/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893267141&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service org.apache.dubbo.metadata.MetadataService to url dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893267141&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The MetadataService exports urls : [dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893267141&version=1.0.0], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dynamically registering consumer model io.localfirst.dubbo.RpcTest$Echo into model Dubbo Module[11.1.1], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Successfully connect to server /192.168.7.39:50052 from NettyConnectionClient 192.168.7.39 using dubbo version 3.3.0, channel is NettyChannel [channel=[id: 0x6a164ec2, L:/192.168.7.39:54781 - R:/192.168.7.39:50052]], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Start NettyConnectionClient /192.168.7.39 connect to the server /192.168.7.39:50052, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close netty channel [id: 0x6a164ec2, L:/192.168.7.39:54781 - R:/192.168.7.39:50052], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Service io.localfirst.dubbo.RpcTest$Echo has idle for 0 ms, wait for 3333 ms to un-export, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The client has been closed and will not reconnect. , dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:47 ���� org.apache.dubbo.common.logger.jcl.JclLogger warn
+����:  [DUBBO] All clients has disconnected from /192.168.7.39:50052. You can graceful shutdown now., dubbo version: 3.3.0, current host: 192.168.7.39, error code: 99-0. This may be caused by unknown error in remoting module, go to https://dubbo.apache.org/faq/99/0 to find instructions. 
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying default framework model: Dubbo Framework[11], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[11] is destroying ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.0](DUBBO_INTERNAL_APPLICATION) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.0.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.0.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.0](DUBBO_INTERNAL_APPLICATION) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from Dubbo Application[11.1](local-cache-test) to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.1](local-cache-test) is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying protocol [DubboProtocol] ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Closing dubbo server: /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:50 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Unexport service: dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893267141&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Unexport service: injvm://127.0.0.1/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=local-cache-test&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893267141&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroy reference: tri://192.168.7.39:50052/io.localfirst.dubbo.RpcTest$Echo?anyhost=true&application=local-cache-test&background=false&bind.ip=192.168.7.39&bind.port=50052&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&interface=io.localfirst.dubbo.RpcTest$Echo&methods=echo&pid=10768&qos.enable=false&register=false&release=3.3.0&side=provider&timestamp=1794893267026, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.1] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.1] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.0] is stopping., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[11.1.0] has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Close all registries [], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying application executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[11.1](local-cache-test) has stopped., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[11] is destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from Dubbo Framework[11] to null, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Destroying global resources ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo is completely destroyed, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] destroying framework executor repository .., dubbo version: 3.3.0, current host: 192.168.7.39
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.02 s -- in io.localfirst.dubbo.RpcTest
+[INFO] Running io.localfirst.dubbo.SpringTest
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Framework[12] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Creating global shared handler ..., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[12.0](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.0.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Serialize check serializable: true, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[12.1](unknown) is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.0] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.1] is created, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize allow list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.allowlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Read serialize blocked list from jar:file:/C:/Users/Administrator/.m2/repository/org/apache/dubbo/dubbo/3.3.0/dubbo-3.3.0.jar!/security/serialize.blockedlist, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The current configurations or effective configurations are as follows:, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:application enableFileCache="true" executorManagementMode="isolation" parameters="{}" name="spring-cache-provider" qosEnable="false" protocol="dubbo" />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:protocol preferSerialization="hessian2,fastjson2" name="dubbo" />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] <dubbo:ssl />, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.0] has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.1] has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[12.1](spring-cache-provider) has been initialized!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.1] is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[12.1](spring-cache-provider) is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.0] is starting., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.0] has started., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.0] has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.1] has started., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The MetricsConfig not exist, will not export metrics service., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[12.1](spring-cache-provider) is ready., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Module[12.1.1] has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Dubbo Application[12.1](spring-cache-provider) has completed., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default framework from null to Dubbo Framework[12], dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Reset global default application from null to Dubbo Application[12.1](spring-cache-provider), dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service io.localfirst.dubbo.SpringTest$Echo to local registry url : injvm://127.0.0.1/io.localfirst.dubbo.SpringTest$Echo?anyhost=true&application=spring-cache-provider&background=false&bind.ip=192.168.7.39&bind.port=20880&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&interface=io.localfirst.dubbo.SpringTest$Echo&methods=echo&pid=10768&qos.enable=false&release=3.3.0&side=provider&timestamp=1794893274897, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service io.localfirst.dubbo.SpringTest$Echo to url dubbo://192.168.7.39:20880/io.localfirst.dubbo.SpringTest$Echo?anyhost=true&application=spring-cache-provider&background=false&bind.ip=192.168.7.39&bind.port=20880&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&interface=io.localfirst.dubbo.SpringTest$Echo&methods=echo&pid=10768&qos.enable=false&release=3.3.0&side=provider&timestamp=1794893274897, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.7.39:20880, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Remote Metadata Report Server is not provided or unavailable, will stop registering service definition to remote center!, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] org.apache.dubbo.metadata.MetadataServiceService Port hasn't been set will use default protocol defined in protocols., dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Using dubbo protocol to export org.apache.dubbo.metadata.MetadataService service on port -1, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service org.apache.dubbo.metadata.MetadataService to local registry url : injvm://127.0.0.1/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=spring-cache-provider&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&exporter.listener=injvm&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=spring-cache-provider&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893274921&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] Export dubbo service org.apache.dubbo.metadata.MetadataService to url dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=spring-cache-provider&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=spring-cache-provider&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893274921&version=1.0.0, dubbo version: 3.3.0, current host: 192.168.7.39
+ʮһ�� 17, 2026 1:27:54 ���� org.apache.dubbo.common.logger.jcl.JclLogger info
+��Ϣ:  [DUBBO] The MetadataService exports urls : [dubbo://192.168.7.39:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=spring-cache-provider&background=false&bind.ip=192.168.7.39&bind.port=20880&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=spring-cache-provider&interface=org.apache.dubbo.metadata.MetadataService&methods=exportInstanceMetadata,getAndListenInstanceMetadata,getExportedServiceURLs,getExportedURLs,getInstanceMetadataChangedListenerMap,getMetadataInfo,getMetadataInfos,getMetadataURL,getServiceDefinition,getSubscribedURLs,isMetadataService,serviceName,toSortedStrings,version&pid=10768&prefer.serialization=hessian2,fastjson2&qos.enable=false&register=false&release=3.3.0&revision=3.3.0&service.filter=-default&side=provider&timestamp=1794893274921&version=1.0.0], dubbo version: 3.3.0, current host: 192.168.7.39
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.847 s -- in io.localfirst.dubbo.SpringTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ dubbo-local-first-spring-boot-starter ---
+[INFO] Building jar: D:\demo\local-first-dubbo-spring-boot-starter\target\dubbo-local-first-spring-boot-starter-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ dubbo-local-first-spring-boot-starter ---
+[INFO] Installing D:\demo\local-first-dubbo-spring-boot-starter\pom.xml to C:\Users\Administrator\.m2\repository\io\localfirst\dubbo\dubbo-local-first-spring-boot-starter\0.1.0-SNAPSHOT\dubbo-local-first-spring-boot-starter-0.1.0-SNAPSHOT.pom
+[INFO] Installing D:\demo\local-first-dubbo-spring-boot-starter\target\dubbo-local-first-spring-boot-starter-0.1.0-SNAPSHOT.jar to C:\Users\Administrator\.m2\repository\io\localfirst\dubbo\dubbo-local-first-spring-boot-starter\0.1.0-SNAPSHOT\dubbo-local-first-spring-boot-starter-0.1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.199 s
+[INFO] Finished at: 2026-11-17T13:28:01+08:00
+[INFO] ------------------------------------------------------------------------
+jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson
