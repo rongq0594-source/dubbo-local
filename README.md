@@ -4,9 +4,9 @@ Dubbo 调用优先使用本机实例。应用只引入依赖，沿用原有 Dubb
 
 ```xml
 <dependency>
-    <groupId>io.localfirst.dubbo</groupId>
+    <groupId>io.github.rongq0594-source</groupId>
     <artifactId>dubbo-local</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
 </dependency>
 ```
 
@@ -43,3 +43,7 @@ INFO 日志仅在本机候选变化时记录“本机引用已缓存”或“本
 mvn clean install
 mvn clean verify '-Ddubbo.version=3.3.1'
 ```
+
+## Maven Central 发布准备
+
+本地源码和签名构建见 [PUBLISHING.md](PUBLISHING.md)。当前版本尚未发布到 Maven Central。
