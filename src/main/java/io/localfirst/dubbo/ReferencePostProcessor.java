@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.IdentityHashMap;
 import java.util.Map;
 
-/** 收集 Spring 中的 Dubbo 引用，在启动完成后填充本机代理缓存。 */
+/** 收集 Spring 中的 Dubbo 引用，启动完成后订阅本机实例并更新代理缓存。 */
 public class ReferencePostProcessor implements BeanPostProcessor, Ordered, ApplicationContextAware,
         ApplicationListener<ApplicationReadyEvent>, DisposableBean {
 
@@ -106,7 +106,7 @@ public class ReferencePostProcessor implements BeanPostProcessor, Ordered, Appli
                 for (ReferenceBean<?> bean : manager.getReferences()) {
                     if (bean.getObject() == original) {
                         ReferenceConfig<?> reference = bean.getReferenceConfig();
-                        handler.setLocal(cache.resolve(reference));
+                        cache.watch(reference, handler::setLocal);
                         return;
                     }
                 }

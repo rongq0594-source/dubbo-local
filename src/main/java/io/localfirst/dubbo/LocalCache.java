@@ -31,8 +31,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Predicate;
+import java.util.function.Consumer;
+import java.util.concurrent.ConcurrentHashMap;
 
-/** 启动时查询映射、实例和元数据，缓存本机直连代理；不修改注册中心配置。 */
+/** 订阅映射和实例变化，更新本机代理缓存；不修改注册中心配置。 */
 class LocalCache {
 
     private static final Log LOGGER = LogFactory.getLog(LocalCache.class);
@@ -45,8 +47,99 @@ class LocalCache {
             new HashMap<URL, Map<String, List<ServiceInstance>>>();
     private final Map<ServiceDiscovery, Map<String, MetadataInfo>> metadata =
             new IdentityHashMap<ServiceDiscovery, Map<String, MetadataInfo>>();
-    private final List<Invoker<?>> invokers = new ArrayList<Invoker<?>>();
-    private final List<ConsumerModel> consumers = new ArrayList<ConsumerModel>();
+    private final Map<ReferenceConfig<?>, Selection> selections =
+            new IdentityHashMap<ReferenceConfig<?>, Selection>();
+    private final Map<ReferenceConfig<?>, List<Consumer<LocalFirstHandler.Target>>> callbacks =
+            new IdentityHashMap<ReferenceConfig<?>, List<Consumer<LocalFirstHandler.Target>>>();
+    private final Map<ReferenceConfig<?>, String> states = new IdentityHashMap<ReferenceConfig<?>, String>();
+    private RegistryWatch watcher;
+    private boolean closed;
+    private final Map<Invoker<?>, LocalFirstHandler.Target> liveTargets =
+            new ConcurrentHashMap<Invoker<?>, LocalFirstHandler.Target>();
+
+    RegistryWatch newWatcher() {
+        return new RegistryWatch(this);
+    }
+
+    synchronized void watch(ReferenceConfig<?> reference, Consumer<LocalFirstHandler.Target> callback) {
+        if (closed) {
+            return;
+        }
+        if (watcher == null) {
+            watcher = newWatcher();
+        }
+        callbacks.computeIfAbsent(reference, key -> new ArrayList<Consumer<LocalFirstHandler.Target>>()).add(callback);
+        callback.accept(resolve(reference));
+    }
+
+    synchronized void mappingChanged(String key, Set<String> apps) {
+        if (closed) { return; }
+        mappings.put(key, apps == null ? Collections.<String>emptySet() : new LinkedHashSet<String>(apps));
+        refresh();
+    }
+
+    synchronized void instancesChanged(URL registry, String app, List<ServiceInstance> values) {
+        if (closed) { return; }
+        instances.computeIfAbsent(registry, key -> new HashMap<String, List<ServiceInstance>>())
+                .put(app, values == null ? Collections.<ServiceInstance>emptyList()
+                        : new ArrayList<ServiceInstance>(values));
+        refresh();
+    }
+
+    synchronized void reconcile() {
+        if (closed) { return; }
+        mappings.clear();
+        instances.clear();
+        // 失败的元数据不缓存，让实例先上线、元数据后发布的场景能在核对时恢复。
+        refresh();
+    }
+
+    private void refresh() {
+        for (Map.Entry<ReferenceConfig<?>, List<Consumer<LocalFirstHandler.Target>>> entry : callbacks.entrySet()) {
+            ReferenceConfig<?> reference = entry.getKey();
+            LocalFirstHandler.Target previous = targets.remove(reference);
+            try {
+                LocalFirstHandler.Target next = resolve(reference);
+                if (next != previous) {
+                    for (Consumer<LocalFirstHandler.Target> callback : entry.getValue()) {
+                        callback.accept(next);
+                    }
+                }
+                if (next != previous && previous != null) {
+                    previous.retire();
+                }
+                if (next == null) {
+                    selections.remove(reference);
+                }
+            } catch (RuntimeException exception) {
+                // 未确认实例下线时保留已知代理，下次事件或周期核对再试。
+                targets.put(reference, previous);
+                LOGGER.warn("刷新本机引用失败, service=" + reference.getInterface(), exception);
+            }
+        }
+        pruneMetadata();
+    }
+
+    private void pruneMetadata() {
+        Map<ServiceDiscovery, Set<String>> current = new IdentityHashMap<ServiceDiscovery, Set<String>>();
+        for (Map.Entry<URL, ServiceDiscovery> entry : discoveries.entrySet()) {
+            Map<String, List<ServiceInstance>> byApp = instances.get(entry.getKey());
+            if (byApp == null) { continue; }
+            Set<String> revisions = current.computeIfAbsent(entry.getValue(), key -> new LinkedHashSet<String>());
+            for (List<ServiceInstance> values : byApp.values()) {
+                for (ServiceInstance instance : values) {
+                    revisions.add(instance.getServiceName() + "|"
+                            + ServiceInstanceMetadataUtils.getExportedServicesRevision(instance));
+                }
+            }
+        }
+        for (Map.Entry<ServiceDiscovery, Set<String>> entry : current.entrySet()) {
+            Map<String, MetadataInfo> cached = metadata.get(entry.getKey());
+            if (cached != null) {
+                cached.keySet().retainAll(entry.getValue());
+            }
+        }
+    }
 
     LocalCache() {
         this(LocalAddress::isLocal);
@@ -57,17 +150,19 @@ class LocalCache {
     }
 
     synchronized LocalFirstHandler.Target resolve(ReferenceConfig<?> reference) {
+        if (closed) { return null; }
         if (targets.containsKey(reference)) {
             return targets.get(reference);
         }
         // 显式直连和 injvm 表达调用方的选址约束，不在此处覆盖。
         if ((reference.getUrl() != null && !reference.getUrl().trim().isEmpty())
                 || Boolean.TRUE.equals(reference.isInjvm()) || Boolean.TRUE.equals(reference.isGeneric())) {
-            LOGGER.info("保留显式 Dubbo 引用, service=" + reference.getInterface());
+            logState(reference, "explicit", "保留显式 Dubbo 引用, service=" + reference.getInterface());
             targets.put(reference, null);
             return null;
         }
         URL query = consumerUrl(reference);
+        boolean failed = false;
         for (RegistryConfig registry : registries(reference)) {
             if (Boolean.FALSE.equals(registry.isSubscribe()) || RegistryConfig.NO_AVAILABLE.equals(registry.getAddress())) {
                 continue;
@@ -75,7 +170,7 @@ class LocalCache {
             URL registryUrl = registryUrl(registry, reference.getScopeModel());
             try {
                 Set<String> apps = apps(reference, query, registryUrl);
-                LOGGER.info("本机引用扫描, service=" + query.getServiceKey() + ", registry=" + registryUrl.getAddress()
+                LOGGER.debug("本机引用扫描, service=" + query.getServiceKey() + ", registry=" + registryUrl.getAddress()
                         + ", namespace=" + registryUrl.getParameter("namespace", "") + ", applications=" + apps);
                 if (apps.isEmpty()) {
                     continue;
@@ -94,21 +189,36 @@ class LocalCache {
                         }
                         List<URL> endpoints = endpoints(query, instance, info);
                         for (URL endpoint : endpoints) {
+                            String key = registryUrl.toFullString() + "|" + app + "|"
+                                    + ServiceInstanceMetadataUtils.getExportedServicesRevision(instance)
+                                    + "|" + endpoint.toFullString();
+                            Selection existing = selections.get(reference);
+                            if (existing != null && existing.key.equals(key)) {
+                                targets.put(reference, existing.target);
+                                return existing.target;
+                            }
                             LocalFirstHandler.Target target = connect(reference, endpoint, query);
+                            selections.put(reference, new Selection(key, target));
                             targets.put(reference, target);
-                            LOGGER.info("本机引用已缓存, service=" + query.getServiceKey() + ", application=" + app
+                            logState(reference, key, "本机引用已缓存, service=" + query.getServiceKey() + ", application=" + app
                                     + ", endpoint=" + endpoint.getProtocol() + "://" + endpoint.getAddress());
                             return target;
                         }
                     }
                 }
             } catch (RuntimeException exception) {
+                failed = true;
                 LOGGER.warn("本机引用扫描失败，保留原引用, service=" + query.getServiceKey()
                         + ", registry=" + registryUrl.getAddress(), exception);
             }
         }
+        if (failed && selections.containsKey(reference)) {
+            LocalFirstHandler.Target previous = selections.get(reference).target;
+            targets.put(reference, previous);
+            return previous;
+        }
         targets.put(reference, null);
-        LOGGER.info("本机引用未命中，使用原 Dubbo 引用, service=" + query.getServiceKey());
+        logState(reference, "", "本机引用未命中，使用原 Dubbo 引用, service=" + query.getServiceKey());
         return null;
     }
 
@@ -125,9 +235,13 @@ class LocalCache {
         String key = reference.getScopeModel().getInternalId() + "|" + registryUrl.toFullString()
                 + "|" + reference.getInterface();
         Set<String> apps = mappings.get(key);
+        URL mappingUrl = query.addParameter("registry", registryUrl.getProtocol())
+                .addParameterIfAbsent("REGISTRY_CLUSTER", registryUrl.getParameter("id", "default"));
+        if (watcher != null) {
+            watcher.mapping(key, registryUrl, mappingUrl);
+        }
         if (apps == null) {
-            apps = lookup(query.addParameter("registry", registryUrl.getProtocol())
-                    .addParameterIfAbsent("REGISTRY_CLUSTER", registryUrl.getParameter("id", "default")));
+            apps = lookup(mappingUrl);
             apps = apps == null ? Collections.<String>emptySet() : new LinkedHashSet<String>(apps);
             mappings.put(key, apps);
         }
@@ -135,7 +249,11 @@ class LocalCache {
     }
 
     Set<String> lookup(URL query) {
-        return ServiceNameMapping.getDefaultExtension(query.getScopeModel()).getRemoteMapping(query);
+        return mapping(query).getRemoteMapping(query);
+    }
+
+    ServiceNameMapping mapping(URL query) {
+        return ServiceNameMapping.getDefaultExtension(query.getScopeModel());
     }
 
     ServiceDiscovery discovery(URL registryUrl) {
@@ -155,6 +273,9 @@ class LocalCache {
         if (byApp == null) {
             byApp = new HashMap<String, List<ServiceInstance>>();
             instances.put(registryUrl, byApp);
+        }
+        if (watcher != null) {
+            watcher.instances(registryUrl, app, discovery);
         }
         if (!byApp.containsKey(app)) {
             List<ServiceInstance> values = discovery.getInstances(app);
@@ -176,7 +297,10 @@ class LocalCache {
         String key = instance.getServiceName() + "|" + revision;
         if (!byRevision.containsKey(key)) {
             instance.setApplicationModel(discovery.getUrl().getOrDefaultApplicationModel());
-            byRevision.put(key, discovery.getRemoteMetadata(revision, Collections.singletonList(instance)));
+            MetadataInfo value = discovery.getRemoteMetadata(revision, Collections.singletonList(instance));
+            if (value != null && value != MetadataInfo.EMPTY) {
+                byRevision.put(key, value);
+            }
         }
         return byRevision.get(key);
     }
@@ -215,6 +339,7 @@ class LocalCache {
         ModuleModel module = reference.getScopeModel();
         URL url = merge(endpoint, query).addParameter("side", "consumer")
                 .setScopeModel(module).setServiceModel(null);
+        ConsumerModel ownedConsumer = null;
         for (ConsumerModel consumer : module.getServiceRepository().getReferredServices()) {
             if (consumer.getReferenceConfig() == reference) {
                 url = url.setServiceModel(consumer);
@@ -223,17 +348,42 @@ class LocalCache {
         }
         if (url.getServiceModel() == null) {
             ConsumerModel consumer = module.registerInternalConsumer(reference.getInterfaceClass(), url);
-            consumers.add(consumer);
+            ownedConsumer = consumer;
             url = url.setServiceModel(consumer);
         }
-        Invoker<?> invoker = module.getExtensionLoader(Protocol.class).getAdaptiveExtension()
-                .refer(reference.getInterfaceClass(), url);
+        Invoker<?> invoker;
+        try {
+            invoker = module.getExtensionLoader(Protocol.class).getAdaptiveExtension()
+                    .refer(reference.getInterfaceClass(), url);
+        } catch (RuntimeException exception) {
+            if (ownedConsumer != null && !module.isDestroyed()) {
+                module.getServiceRepository().unregisterConsumer(ownedConsumer);
+            }
+            throw exception;
+        }
         try {
             Object proxy = module.getExtensionLoader(ProxyFactory.class).getAdaptiveExtension().getProxy(invoker);
-            invokers.add(invoker);
-            return new LocalFirstHandler.Target(proxy, invoker::isAvailable);
+            final ConsumerModel owned = ownedConsumer;
+            final URL clientUrl = url;
+            LocalFirstHandler.Target target = new LocalFirstHandler.Target(proxy, invoker::isAvailable, () -> {
+                try {
+                    invoker.destroy();
+                } catch (RuntimeException exception) {
+                    LOGGER.warn("销毁本机引用失败, service=" + reference.getInterface(), exception);
+                } finally {
+                    liveTargets.remove(invoker);
+                    if (owned != null && !module.isDestroyed()) {
+                        module.getServiceRepository().unregisterConsumer(owned);
+                    }
+                }
+            }, method -> clientUrl.getMethodParameter(method.getName(), "async", false));
+            liveTargets.put(invoker, target);
+            return target;
         } catch (RuntimeException exception) {
             invoker.destroy();
+            if (ownedConsumer != null && !module.isDestroyed()) {
+                module.getServiceRepository().unregisterConsumer(ownedConsumer);
+            }
             throw exception;
         }
     }
@@ -300,25 +450,46 @@ class LocalCache {
     }
 
     synchronized void close() {
-        for (Invoker<?> invoker : invokers) {
-            try {
-                invoker.destroy();
-            } catch (RuntimeException exception) {
-                LOGGER.warn("销毁本机引用失败, service=" + invoker.getInterface().getName(), exception);
+        if (closed) { return; }
+        closed = true;
+        if (watcher != null) {
+            watcher.close();
+        }
+        for (List<Consumer<LocalFirstHandler.Target>> listeners : callbacks.values()) {
+            for (Consumer<LocalFirstHandler.Target> callback : listeners) {
+                callback.accept(null);
             }
         }
-        invokers.clear();
-        for (ConsumerModel consumer : consumers) {
-            if (!consumer.getModuleModel().isDestroyed()) {
-                consumer.getModuleModel().getServiceRepository().unregisterConsumer(consumer);
-            }
+        callbacks.clear();
+        for (Selection selection : selections.values()) {
+            selection.target.retire();
         }
-        consumers.clear();
+        for (LocalFirstHandler.Target target : liveTargets.values()) {
+            target.retire();
+        }
+        selections.clear();
+        states.clear();
         targets.clear();
         // 发现客户端由 Dubbo 作用域管理，不能关闭应用共享的客户端。
         discoveries.clear();
         mappings.clear();
         instances.clear();
         metadata.clear();
+    }
+
+    private void logState(ReferenceConfig<?> reference, String state, String message) {
+        if (!state.equals(states.put(reference, state))) {
+            LOGGER.info(message);
+        }
+    }
+
+    private static final class Selection {
+        final String key;
+        final LocalFirstHandler.Target target;
+
+        Selection(String key, LocalFirstHandler.Target target) {
+            this.key = key;
+            this.target = target;
+        }
     }
 }
